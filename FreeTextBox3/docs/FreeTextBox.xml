@@ -1,0 +1,2060 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreeTextBox</name>
+    </assembly>
+    <members>
+        <member name="T:FreeTextBoxControls.Support.ToolbarCollection">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.ToolbarDropDownListItemCollection">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.ToolbarItem">
+            <summary>
+            Base class for all toolbar items (<see cref="T:FreeTextBoxControls.ToolbarButton"/>, <see cref="T:FreeTextBoxControls.ToolbarDropDownList"/>, etc.)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.TitleHasBeenSet">
+            <summary>
+            Gets whether the Title property has been manually set
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.IsProFeature">
+            <summary>
+            Gets whether the ToolbarItem requires a Pro license
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.IsBuiltIn">
+            <summary>
+            Gets whether the ToolbarItem is built into the FreeTextBox namespace
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.ClientID">
+            <summary>
+            Gets or sets the string used to identify the ToolbarItem for Toolbar config updates
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.Title">
+            <summary>
+            Gets or sets the alt tile for buttons and first item of a dropdownlist
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.CommandIdentifier">
+            <summary>
+            Gets or sets the command identifier used for dynamic updating through the queryCommandState method
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.ScriptBlock">
+            <summary>
+            Gets or sets the JavaScript code for the function
+            </summary>					
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.StateScriptBlock">
+            <summary>
+            Gets or sets the JavaScript code to determine the state of the button or list
+            </summary>					
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ToolbarItem.EnabledScriptBlock">
+            <summary>
+            Gets or sets the JavaScript code to determine if the button or list is enabled
+            </summary>					
+        </member>
+        <member name="T:FreeTextBoxControls.Support.ToolbarItemCollection">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.InsertButton">
+            <summary>
+            A ToolbarButton with Insert InsertCheckBox JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarButton">
+            <summary>
+            A Button in a <seealso cref="T:FreeTextBoxControls.Toolbar"/> in a <seealso cref="T:FreeTextBoxControls.FreeTextBox"/>.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButton.ButtonImage">
+            <summary>
+            Gets or sets the name of the button image. 
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButton.BuiltInButtonOffset">
+            <summary>
+            Gets or sets the CSS offset of the button. 
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.InsertCheckBox">
+            <summary>
+            A ToolbarButton with Insert CheckBox JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertDropDownList">
+            <summary>
+            A ToolbarButton with Insert DropDownList JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertForm">
+            <summary>
+            A ToolbarButton with Insert Form JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertRadioButton">
+            <summary>
+            A ToolbarButton with Insert InsertCheckBox JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTextArea">
+            <summary>
+            A ToolbarButton with Insert InsertCheckBox JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTextBox">
+            <summary>
+            A ToolbarButton with Insert InsertCheckBox JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.EditStyle">
+            <summary>
+            A ToolbarButton with Style Editing JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.FontBackColorPicker">
+            <summary>
+            A ToolbarButton with FontBackColorPicker JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.FontForeColorPicker">
+            <summary>
+            A ToolbarButton with FontForeColorPicker JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertDiv">
+            <summary>
+            A ToolbarButton with Insert DIV JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.WordClean">
+            <summary>
+            A ToolbarButton with WordClean JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.DeleteTableColumn">
+            <summary>
+            A ToolbarButton with Delete Table Column JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.DeleteTableRow">
+            <summary>
+            A ToolbarButton with Delete Table Row JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.EditTable">
+            <summary>
+            A ToolbarButton with Insert Table JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTable">
+            <summary>
+            A ToolbarButton with Insert Table JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTableColumnAfter">
+            <summary>
+            A ToolbarButton with Insert Table Column After JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTableColumnBefore">
+            <summary>
+            A ToolbarButton with Insert Table Column Before JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTableRowAfter">
+            <summary>
+            A ToolbarButton with Insert Table Row After JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTableRowBefore">
+            <summary>
+            A ToolbarButton with Insert Table Row Before JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Bold">
+            <summary>
+            A ToolbarButton with Bold JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.BulletedList">
+            <summary>
+            A ToolbarButton with BulletedList JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Copy">
+            <summary>
+            A ToolbarButton with Copy JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.CreateLink">
+            <summary>
+            A ToolbarButton with CreateLink JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Cut">
+            <summary>
+            A ToolbarButton with Cut JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Delete">
+            <summary>
+            A ToolbarButton with Print JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.IeSpellCheck">
+            <summary>
+            A ToolbarButton with IE SpellCheck JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Indent">
+            <summary>
+            A ToolbarButton with Indent JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertDate">
+            <summary>
+            A ToolbarButton with InsertDate JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertImage">
+            <summary>
+            A ToolbarButton with InsertImage JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertImageFromGallery">
+            <summary>
+            A ToolbarButton with InsertImageFromGallery JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertRule">
+            <summary>
+            A ToolbarButton with InsertRule JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertTime">
+            <summary>
+            A ToolbarButton with InsertTime JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Italic">
+            <summary>
+            A ToolbarButton with Italic JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.JustifyRight">
+            <summary>
+            A ToolbarButton with JustifyRight JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.JustifyCenter">
+            <summary>
+            A ToolbarButton with JustifyCenter JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.JustifyFull">
+            <summary>
+            A ToolbarButton with JustifyFull JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.JustifyLeft">
+            <summary>
+            A ToolbarButton with JustifyLeft JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.NetSpell">
+            <summary>
+            A ToolbarButton with NetSpell JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.NumberedList">
+            <summary>
+            Returns a ToolbarButton with NumberedList JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Outdent">
+            <summary>
+            A ToolbarButton with Outdent JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Paste">
+            <summary>
+            A ToolbarButton with Paste JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Preview">
+            <summary>
+            A ToolbarButton with Select All JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Print">
+            <summary>
+            A ToolbarButton with Print JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Redo">
+            <summary>
+            A ToolbarButton with Redo JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.RemoveFormat">
+            <summary>
+            A ToolbarButton with RemoveFormat JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Save">
+            <summary>
+            A ToolbarButton with Save JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.SelectAll">
+            <summary>
+            A ToolbarButton with Select All JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.StrikeThrough">
+            <summary>
+            A ToolbarButton with StrikeThrough JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.SubScript">
+            <summary>
+            A ToolbarButton with SubScript JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.SuperScript">
+            <summary>
+            A ToolbarButton with SuperScript JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Underline">
+            <summary>
+            A ToolbarButton with Underline JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Undo">
+            <summary>
+            A ToolbarButton with Undo JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Unlink">
+            <summary>
+            A ToolbarButton with Unlink JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.FontBackColorsMenu">
+            <summary>
+            A ToolbarDropDownList with Font Back Color JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarDropDownList">
+            <summary>
+            A DropDownList in a <seealso cref="T:FreeTextBoxControls.Toolbar"/> in a <seealso cref="T:FreeTextBoxControls.FreeTextBox"/>.
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.FontFacesMenu">
+            <summary>
+            A ToolbarDropDownList with Font Faces JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.FontForeColorsMenu">
+            <summary>
+            A ToolbarDropDownList with Font Fore Color JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.FontSizesMenu">
+            <summary>
+            A ToolbarDropDownList with Font Sizes JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.InsertHtmlMenu">
+            <summary>
+            A ToolbarDropDownList to insert HTML.
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.ParagraphMenu">
+            <summary>
+            A ToolbarDropDownList with Paragraph JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.StylesMenu">
+            <summary>
+            A ToolbarDropDownList with Paragraph JavaScript functions builtin
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.SymbolsMenu">
+            <summary>
+            A ToolbarDropDownList with a Symbols menu
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Design.FreeTextBoxDesigner">
+            <summary>
+            This is the class which displays FreeTextBox in VS.NET
+            </summary>
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.BreakMode">
+            <summary>
+            What happens when 'Enter' is pressed 
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.BreakMode.Paragraph">
+            <summary>
+            P tags are added (IE only)
+            </summary>	
+        </member>
+        <member name="F:FreeTextBoxControls.BreakMode.LineBreak">
+            <summary>
+            BR tags are added
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.ButtonRenderMode">
+            <summary>
+            Determines how buttons are rendered
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ButtonRenderMode.StyledBackgrounds">
+            <summary>
+            Uses individual images for each 
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ButtonRenderMode.ImageBackgrounds">
+            <summary>
+            Uses CSS to change images.  Recommended only for Mozilla.  IE's CSS and caching sucks.
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.DownLevelMode">
+            <summary>
+            Determines what happens when FreeTextBox renders for a client incapable of Rich editing
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.DownLevelMode.TextArea">
+            <summary>
+            Renders an HTML TextArea control
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.DownLevelMode.InlineHtml">
+            <summary>
+            Displays the HTML inline
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.DownLevelMode.Message">
+            <summary>
+            Displays a message defined by the <see cref="!:FreeTextBox.DownlevelMessage"/> property
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.EditorMode">
+            <summary>
+            Determines which mode the editor is in
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.EditorMode.HtmlMode">
+            <summary>
+            HTML editing mode
+            </summary>		
+        </member>
+        <member name="F:FreeTextBoxControls.EditorMode.DesignMode">
+            <summary>
+            What you see is what you get design mode
+            </summary>		
+        </member>
+        <member name="T:FreeTextBoxControls.InstallationErrorMessage">
+            <summary>
+            Options for displaying a message that the JavaScript has not loaded properly
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.InstallationErrorMessage.None">
+            <summary>
+            No error message is displayed
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.InstallationErrorMessage.JavaScriptAlert">
+            <summary>
+            A JavaScript popup appears alerting users to the problem
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.InstallationErrorMessage.InlineMessage">
+            <summary>
+            An inline message appears alerting the user to the problem
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.PasteMode">
+            <summary>
+            What happens when a user tries to paste into the editor
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.PasteMode.Default">
+            <summary>
+            Default browser functionality
+            </summary>	
+        </member>
+        <member name="F:FreeTextBoxControls.PasteMode.Disabled">
+            <summary>
+            Pasting is completely disabled
+            </summary>	
+        </member>
+        <member name="F:FreeTextBoxControls.PasteMode.Text">
+            <summary>
+            Only text. No HTML allowed.
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.RenderMode">
+            <summary>
+            Force FreeTextBox to render as Rich or Text
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.RenderMode.Rich">
+            <summary>
+            Forces FreeTextBox to render the rich editor
+            </summary>			
+        </member>
+        <member name="F:FreeTextBoxControls.RenderMode.Plain">
+            <summary>
+            Forces FreeTextBox to render the plain TEXTAREA
+            </summary>			
+        </member>
+        <member name="F:FreeTextBoxControls.RenderMode.NotSet">
+            <summary>
+            Allows FreeTextBox to choose what to render
+            </summary>			
+        </member>
+        <member name="T:FreeTextBoxControls.ResourceLocation">
+            <summary>
+            Determines where FreeTextBox looks for images
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ResourceLocation.InternalResource">
+            <summary>
+            FreeTextBox will load its own internal resources
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ResourceLocation.ExternalFile">
+            <summary>
+            FreeTextBox will create HREFs to external files
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.ResourceType">
+            <summary>
+            The images used to draw FreeTextBox
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ResourceType.Button">
+            <summary>
+            An image used for <see cref="T:FreeTextBoxControls.ToolbarButton"/>
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ResourceType.Toolbar">
+            <summary>
+            Miscellaneous images used to draw the FreeTextBox toolbars
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ResourceType.JavaScript">
+            <summary>
+            The scripts used in FreeTextBox
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ResourceType.Utility">
+            <summary>
+            Image files used in non-button functions
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.ScriptMode">
+            <summary>
+            Determines if ToolbarItem JavaScript is written inpage or comes from an external file
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ScriptMode.InPage">
+            <summary>
+            Writes JavaScript code directly to the page
+            </summary>		
+        </member>
+        <member name="F:FreeTextBoxControls.ScriptMode.External">
+            <summary>
+            Uses an externally linked JavaScript file for builtin ToolbarItems
+            </summary>		
+        </member>
+        <member name="T:FreeTextBoxControls.TabMode">
+            <summary>
+            Determines what happens when the tab key is pressed
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.TabMode.Disabled">
+            <summary>
+            Once in the editor, the tab key is disabled
+            </summary>		
+        </member>
+        <member name="F:FreeTextBoxControls.TabMode.NextControl">
+            <summary>
+            Allow the browser to go to the next control in the HTML form
+            </summary>		
+        </member>
+        <member name="F:FreeTextBoxControls.TabMode.InsertSpaces">
+            <summary>
+            Inserts spaces into the editor to mimic tabs
+            </summary>		
+        </member>
+        <member name="T:FreeTextBoxControls.TextDirection">
+            <summary>
+            The direction of text within the editor
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarStyleConfiguration">
+            <summary>
+            Determines how the toolbars and its buttons and dropdownlists are displayed
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ToolbarStyleConfiguration.NotSet">
+            <summary>
+            Allows the developer to change styles.
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ToolbarStyleConfiguration.OfficeXP">
+            <summary>
+            Sets images, borders and backcolors to Office XP style
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ToolbarStyleConfiguration.Office2000">
+            <summary>
+            Sets images, borders and backcolors to Office 2000 style
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ToolbarStyleConfiguration.Office2003">
+            <summary>
+            Sets images, borders and backcolors to Office 2003 style
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ToolbarStyleConfiguration.OfficeMac">
+            <summary>
+            Sets images, borders and backcolors to Office Mac style
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Licensing.FtbLicense">
+            <summary>
+            Stores information found in the FreeTextBox.lic file
+            </summary>
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Licensing.FtbLicenseProvider">
+            <summary>
+            Creates and processes FreeTextBox.lic
+            </summary>
+            <exclude />
+        </member>
+        <member name="M:FreeTextBoxControls.Licensing.FtbLicenseProvider.ValidateLicense(FreeTextBoxControls.Licensing.FtbLicense,System.String@)">
+            <summary>
+            Sets up the lisence
+            </summary>
+            <param name="license"></param>
+            <param name="errorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTextBoxControls.Licensing.FtbLicenseProvider.ValidateLicenseData(System.Type,System.String)">
+            <summary>
+            Checks if the license data is in a valid form
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Licensing.FtbLicenseProvider.FtbLicenseCollector">
+            <summary>
+            Stores licenses so they are not read from disk every time
+            </summary>
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.ContentType">
+            <summary>
+            The ContentType enumeration has several constant strings that represent the various
+            MIME content types used for the response stream of ASP.NET. These values are 
+            particularly useful when specifying <see cref="!:WebResource"/> attributes.
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.ImageGif">
+            <summary>
+            Content type for "image/gif"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.ImageBmp">
+            <summary>
+            Content type for "image/bmp"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.ImageJpeg">
+            <summary>
+            Content type for "image/jpeg"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.ImagePng">
+            <summary>
+            Content type for "image/png"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.TextHtml">
+            <summary>
+            Content type for "text/html"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.TextXml">
+            <summary>
+            Content type for "text/xml"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.TextComponent">
+            <summary>
+            Content type for "text/x-component"
+            </summary>
+        </member>
+        <member name="F:FreeTextBoxControls.ContentType.JavaScript">
+            <summary>
+            Content type for "text/javascript"
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.AssemblyResourceHandler">
+            <summary>
+            <para>
+            The AssemblyResourceHandler class is an http handler that is able to retrieve
+            embedded resources from a particular assembly. It will stream this resource back to the 
+            requesting client. The embedded resource must be reachable for this handler. For this
+            an assembly-level attribute <see cref="T:FreeTextBoxControls.WebResourceAttribute"/> must be specified.
+            This attribute specifies the name of the resource file with extension and the content
+            type. The latter can be specified as a literal string or as one of the 
+            <see cref="T:FreeTextBoxControls.ContentType"/> static values. 
+            </para>
+            <para>
+            If you do not specify the <see cref="T:FreeTextBoxControls.WebResourceAttribute"/>attribute, an 
+            <see cref="T:System.ArgumentException"/> will be thrown when requesting the resource.
+            The resource can be retrieved through a special URL, which can be build using the
+            <see cref="M:FreeTextBoxControls.AssemblyResourceHandler.GetWebResourceUrl(System.Type,System.String,System.String)"/> method.
+            </para>
+            <seealso cref="T:FreeTextBoxControls.WebResourceAttribute"/>
+            </summary>
+            <example>
+            This example shows how to specify the ScrollablePanel.bmp file, which has a Build Action 
+            of Embedded Resource, as being reachable for 
+            <code>
+            [assembly: WebResource("ScrollablePanel.bmp", ContentType.TextComponent)]
+            
+            //Inside MyPage.aspx.cs
+            private void Page_Load(object sender, System.EventArgs e)
+            {
+                Image1.ImageUrl = AssemblyResourceHandler.GetWebResourceUrl(
+                        typeof(ScrollablePanel), "ScrollablePanel.bmp");
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:FreeTextBoxControls.AssemblyResourceHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Process the request from the user
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:FreeTextBoxControls.AssemblyResourceHandler.Load(System.String,System.String,System.String,System.String@,System.Boolean@)">
+            <summary>
+            Load an image from a given assembly
+            </summary>
+            <param name="assembly">The name of the assembly to load</param>
+            <param name="resourceName">The name of the resource to load</param>
+            <param name="contentType">Will be set to the content type as specified by the
+            <see cref="!:WebResource"/></param>
+            <returns>A <see cref="T:System.IO.Stream"/> for the embedded resource.</returns>
+        </member>
+        <member name="M:FreeTextBoxControls.AssemblyResourceHandler.GetWebResourceUrl(System.Type,System.String,System.String)">
+            <summary>
+            <para>
+            Composes a full url to be used when referencing a resource of this type
+            and with the specified name.
+            </para>
+            </summary>
+            <param name="type">Type of the resource.</param>
+            <param name="resourceName">Name of the embedded resource.</param>
+            <param name="resourceHandlerPath">Path to the resource handler.</param>
+            <returns>Url to retrieve this particular resource.</returns>
+        </member>
+        <member name="P:FreeTextBoxControls.AssemblyResourceHandler.IsReusable">
+            <summary>
+            This handler is marked as reusable and always return true.
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarButtonStyle">
+            <summary>
+            Contains all the style parameters for ToolbarButtons
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.ToolbarButtonStyle.#ctor">
+            <summary>
+            Default properties (Office 2003)
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.ToolbarButtonStyle.#ctor(System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Constructor for colors only
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.UseBackgroundImage">
+            <summary>
+            The background image in the normal state.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.UseOverBackgroundImage">
+            <summary>
+            The background image onMouseOver.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.UseDownBackgroundImage">
+            <summary>
+            The background image onMouseDown (UNUSED).
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.BackColor">
+            <summary>
+            The default back color of buttons.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.BackColorGradient">
+            <summary>
+            IE only property to use gradients.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.BorderColorDark">
+            <summary>
+            The default dark (right and bottom) border color of buttons.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.BorderColorLight">
+            <summary>
+            The default light (top and left) border color of buttons.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.OverBackColor">
+            <summary>
+            The default onMouseOver back color of buttons.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.OverBackColorGradient">
+            <summary>
+            IE only property to use gradients.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.OverBorderColorLight">
+            <summary>
+            The default onMouseOver light (top and left) border color of buttons.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.OverBorderColorDark">
+            <summary>
+            The default onMouseOver dark (right and bottom) border color of buttons.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.DownBackColor">
+            <summary>
+            The default onMouseDown back color of buttons.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.DownBackColorGradient">
+            <summary>
+            IE only property to use gradients.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.DownBorderColorLight">
+            <summary>
+            The default onMouseDown light (top and left) border color of buttons onMouseDown.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarButtonStyle.DownBorderColorDark">
+            <summary>
+            The default onMouseDown dark (right and bottom) border color of buttons onMouseDown.
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.LiteralType">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Entity">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.HtmlStream">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Ucs4Decoder">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Ucs4DecoderBigEngian">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Ucs4DecoderLittleEndian">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.ElementDecl">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.DeclaredContent">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.ContentModel">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.GroupType">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Occurrence">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Group">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.AttributeType">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.AttributePresence">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.AttDef">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.AttList">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.SgmlDtd">
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.CaseFolding">
+            <summary>
+            SGML is case insensitive, so here you can choose between converting
+            to lower case or upper case tags.  "None" means that the case is left
+            alone, except that end tags will be folded to match the start tags.
+            </summary>
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.HWStack">
+            <summary>
+            This stack maintains a high water mark for allocated objects so the client
+            can reuse the objects in the stack to reduce memory allocations, this is
+            used to maintain current state of the parser for element stack, and attributes
+            in each element.
+            </summary>
+            <exclude />
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Attribute">
+            <summary>
+            This class represents an attribute.  The AttDef is assigned
+            from a validation process, and is used to provide default values.
+            </summary>
+            <exclude />
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Sgml.Attribute.Reset(System.String,System.String,System.Char)">
+            <summary>
+            Attribute objects are reused during parsing to reduce memory allocations, 
+            hence the Reset method. 
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.Node">
+            <summary>
+            This class models an XML node, an array of elements in scope is maintained while parsing
+            for validation purposes, and these Node objects are reused to reduce object allocation,
+            hence the reset method.  
+            </summary>
+            <exclude />
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Sgml.Node.Reset(System.String,System.Xml.XmlNodeType,System.String)">
+            <summary>
+            Attribute objects are reused during parsing to reduce memory allocations, 
+            hence the Reset method. 
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Sgml.SgmlReader">
+            <summary>
+            SgmlReader is an XmlReader API over any SGML document (including built in 
+            support for HTML).  
+            </summary>
+            <exclude />
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Sgml.SgmlReader.SetBaseUri(System.String)">
+            <summary>
+            The base Uri is used to resolve relative Uri's like the SystemLiteral and
+            Href properties.  This is a method because BaseURI is a read-only
+            property on the base XmlReader class.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.Dtd">
+            <summary>
+            Specify the SgmlDtd object directly.  This allows you to cache the Dtd and share
+            it across multipl SgmlReaders.  To load a DTD from a URL use the SystemLiteral property.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.DocType">
+            <summary>
+            The name of root element specified in the DOCTYPE tag.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.PublicIdentifier">
+            <summary>
+            The PUBLIC identifier in the DOCTYPE tag
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.SystemLiteral">
+            <summary>
+            The SYSTEM literal in the DOCTYPE tag identifying the location of the DTD.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.InternalSubset">
+            <summary>
+            The DTD internal subset in the DOCTYPE tag
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.InputStream">
+            <summary>
+            The input stream containing SGML data to parse.
+            You must specify this property or the Href property before calling Read().
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.WebProxy">
+            <summary>
+            Sometimes you need to specify a proxy server in order to load data via HTTP
+            from outside the firewall.  For example: "itgproxy:80".
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.Href">
+            <summary>
+            Specify the location of the input SGML document as a URL.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.StripDocType">
+            <summary>
+            Whether to strip out the DOCTYPE tag from the output (default true)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.ErrorLog">
+            <summary>
+            DTD validation errors are written to this stream.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.Sgml.SgmlReader.ErrorLogFile">
+            <summary>
+            DTD validation errors are written to this log file.
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.BrowserInfo">
+            <summary>
+            Detects browser information for FreeTextBox
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.BrowserInfo.GetBrowserInfo">
+            <summary>
+            Returns a BrowerInfo object with <see cref="T:FreeTextBoxControls.FreeTextBox"/> related information.
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.BrowserInfo.GetBrowserInfo(System.Web.HttpContext)">
+            <summary>
+            Returns a BrowerInfo object with <see cref="T:FreeTextBoxControls.FreeTextBox"/> related information.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsRichCapable">
+            <summary>
+            Gets whether the browser can Rich edit.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsPalm">
+            <summary>
+            Gets whether a browser is Palm-based
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsMac">
+            <summary>
+            Gets whether the OS is Mac.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsWindows">
+            <summary>
+            Gets whether the OS is Windows.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsLinux">
+            <summary>
+            Gets whether the OS is Linux.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsOpera">
+            <summary>
+            Gets whether a browser is Opera or greater.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsIE">
+            <summary>
+            Gets whether a browser is IE 5 or greater.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsGecko">
+            <summary>
+            Gets whether thebrowser has a Gecko rendering engine.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.Support.BrowserInfo.IsWebkit">
+            <summary>
+            Gets whether thebrowser has a Gecko rendering engine.
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.Support.ClientScriptWrapper">
+            <summary>
+            Wrapper for methods that differ from .NET 1.x to 2.0
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Formatter">
+            <summary>
+            Formats HTML text.
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.HtmlSymbolsToHtmlCodes(System.String)">
+            <summary>
+            Converts Html Symbols to their respective Html Codes
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.HtmlCodesToHtmlSymbols(System.String)">
+            <summary>
+            Converts Html Codes to Html Characters
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.RemoveServerNameFromUrls(System.String,System.String)">
+            <summary>
+            Removes the local servername from A and IMG tags
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.RemoveScriptNameFromBookmarks(System.String,System.String)">
+            <summary>
+            Removes the scriptname from bookmarks (#mark).
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.RemoveScriptTags(System.String)">
+            <summary>
+            Removes &lt;script&gt; tags
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.RemoveWhiteSpace(System.String)">
+            <summary>
+            Removes unneeded whites space (spaces and breaks)
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.RemoveJavaScriptEventsFromTags(System.String)">
+            <summary>
+            Removes &lt;script&gt; tags
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Formatter.HtmlToXhtml(System.String)">
+            <summary>
+            Uses <see cref="T:FreeTextBoxControls.Support.Sgml.SgmlReader"/> to convert HTML to well-formed XHTML
+            </summary>
+            <param name="input">The text to convert</param>
+            <returns></returns>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.Helper">
+            <summary>
+            Helper functions for FreeTextBox
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Helper.ColorToHtml(System.Drawing.Color)">
+            <summary>
+            Converts Color objects to HTML Hexedecimals
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Helper.BoolToNumber(System.Boolean)">
+            <summary>
+            Converts boolean values to JavaScript usable 0 or 1.
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.Support.Helper.PopulateDefaultDropDownList(FreeTextBoxControls.ToolbarDropDownList,FreeTextBoxControls.FreeTextBox,FreeTextBoxControls.Support.ResourceManager)">
+            <summary>
+            Fills empty <see cref="T:FreeTextBoxControls.ToolbarDropDownList"/>s with default items.
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.MsAjaxProxy">
+            <summary>
+            This is a proxy object for the Page.ClientScript and MS Ajax ScriptManager
+            object that can operate when MS Ajax is not present. Because MS Ajax
+            may not be available accessing the methods directly is not possible
+            and we are required to indirectly reference client script methods through
+            this class.
+            
+            This class should be invoked at the Control's start up and be used
+            to replace all calls Page.ClientScript. Scriptmanager calls are made
+            through Reflection
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.#ctor">
+            <summary>
+            No public constructor - use ClientScriptProxy.Current to
+            get an instance to ensure you once have one instance per
+            page active.
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.IsMsAjax">
+            <summary>
+            Checks to see if MS Ajax is registered with the current
+            Web application.
+            
+            Note: Method is static so it can be directly accessed from
+            anywhere. If you use the IsMsAjax property to check the
+            value this method fires only once per application.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.IsScriptManagerOnPage(System.Web.UI.Page)">
+            <summary>
+            Checks to see if a script manager is on the page
+            </summary>
+            <param name="control"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.RegisterClientScriptResource(System.Web.UI.Control,System.Type,System.String)">
+            <summary>
+            Returns a WebResource or ScriptResource URL for script resources that are to be
+            embedded as script includes.
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+            <param name="resourceName"></param>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.RegisterClientScriptBlock(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)">
+            <summary>
+            Registers a client script block in the page.
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+            <param name="key"></param>
+            <param name="script"></param>
+            <param name="addScriptTags"></param>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.RegisterStartupScript(System.Web.UI.Control,System.Type,System.String,System.String,System.Boolean)">
+            <summary>
+            Registers a startup code snippet that gets placed at the bottom of the page
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+            <param name="key"></param>
+            <param name="script"></param>
+            <param name="addStartupTags"></param>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.RegisterClientScriptInclude(System.Web.UI.Control,System.Type,System.String,System.String)">
+            <summary>
+            Registers a script include tag into the page for an external script url
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+            <param name="key"></param>
+            <param name="url"></param>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.GetWebResourceUrl(System.Web.UI.Control,System.Type,System.String)">
+            <summary>
+            Returns a WebResource URL for non script resources
+            </summary>
+            <param name="control"></param>
+            <param name="type"></param>
+            <param name="resourceName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.MsAjaxProxy.RegisterHiddenField(System.Web.UI.Control,System.String,System.String)">
+            <summary>
+            Injects a hidden field into the page
+            </summary>
+            <param name="control"></param>
+            <param name="hiddenFieldName"></param>
+            <param name="hiddenFieldInitialValue"></param>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.MsAjaxProxy.Current">
+            <summary>
+            Current instance of this class which should always be used to
+            access this object. There are no public constructors to
+            ensure the reference is used as a Singleton to further
+            ensure that all scripts are written to the same clientscript
+            manager.
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.ResourceManager">
+            <summary>
+            Gets language specific information for <see cref="T:FreeTextBoxControls.FreeTextBox"/> and its child controls.
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.ResourceManager.GetSupportedLanguages">
+            <summary>
+            Gets all the supported languages files.
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.ResourceManager.GetString(System.String)">
+            <summary>
+            Gets a string value from the XML source.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ResourceManager.Language">
+            <summary>
+            Gets or sets the language used.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Support.ResourceManager.Path">
+            <summary>
+            Gets or sets the path to FreeTextBox language files
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.ResourceCreator">
+            <summary>
+            Outputs FreeTextBox resources such as JavaScript files and images
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.ResourceCreator.SaveToolbarScript(System.String)">
+            <summary>
+            Saves the JavaScript for <see cref="T:FreeTextBoxControls.Support.ToolbarItem"/>s to the desired location
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.Support.ResourceCreator.CreateToolbarItemScript">
+            <summary>
+            Generates the JavaScript for <see cref="T:FreeTextBoxControls.Support.ToolbarItem"/>s
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.Support.StyleSheetParser">
+            <summary>
+            Reads stylesheets for FreeTextBox
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.Support.StyleSheetParser.ParseStyleSheet(System.String)">
+            <summary>
+            Finds the stylesheet and reads in correctly formatted styles
+            </summary>			
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarGenerator">
+            <summary>
+            Builds Toolbars and ToolbarItems from strings 
+            </summary>	
+        </member>
+        <member name="M:FreeTextBoxControls.ToolbarGenerator.ToolbarsFromString(System.String)">
+            <summary>
+            Generates Toolbars from ToolbarLayout string
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.ToolbarGenerator.ToolbarItemFromString(System.String)">
+            <summary>
+            Returns a ToolbarItem from it's string representation.  If an invalid string is given, a ToolbarSeparator is returned.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarGenerator.Default">
+            <summary>
+            Returns a Toolbars with the default configuration
+            </summary>			
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarGenerator.EnableAll">
+            <summary>
+            Returns a Toolbars with the all buttons and dropdowns enabled
+            </summary>			
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarGenerator.DefaultPlusTables">
+            <summary>
+            Returns a Toolbars with the default configuration plus tables
+            </summary>			
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarGenerator.Minimal">
+            <summary>
+            Returns a Toolbars with only bold, italic, and underline
+            </summary>			
+        </member>
+        <member name="T:FreeTextBoxControls.Toolbar">
+            <summary>
+            Encapsulates all the style information for ToolbarButtons
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Toolbar.RepeatDirection">
+            <summary>
+            Gets or sets the repeat direction of <seealso cref="T:FreeTextBoxControls.Support.ToolbarItem"/>s in the Toolbar
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.Toolbar.ButtonStyle">
+            <summary>
+            Style parameters for ToolbarButtons. 
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarListItem">
+            <summary>
+            ListItem replacement for FTB dropdownlists
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.ToolbarListItem.System#Web#UI#IParserAccessor#AddParsedSubObject(System.Object)">
+            <remarks>
+            Use text between ToolbarItem tags as the ScriptBlock property
+            </remarks>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarListItem.Value">
+            <summary>
+            Gets or sets the value property of the DropDownList option.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarListItem.BackColor">
+            <summary>
+            Gets or sets the the background color of the DropDownList option
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.ToolbarListItem.Text">
+            <summary>
+            Gets or sets the text property of the DropDownList
+            </summary>	
+        </member>
+        <member name="T:FreeTextBoxControls.ToolbarSeparator">
+            <summary>
+            DropDownList for the toolbar
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.FreeTextBox">
+            <summary>
+            The no. 1 free ASP.NET HTML editor for IE, Firefox, Opera, Safari, and Chrome.
+            </summary>
+            <remarks>
+            Supports IE, Firefox, Opera, Safari, and Chrome. The Toolbar can be customized in several ways. 1) By setting the <see cref="P:FreeTextBoxControls.FreeTextBox.ToolbarLayout"/> string 
+            with appopriate <see cref="T:FreeTextBoxControls.ToolbarButton"/> and <see cref="T:FreeTextBoxControls.ToolbarDropDownList"/> names, 2) Procedurally, by setting AutoGenerateToolbarsFromString=false and
+            adding ASP.NET code, 3) in codebehind, 4) by inherting from <see cref="T:FreeTextBoxControls.ToolbarButton"/> or <see cref="T:FreeTextBoxControls.ToolbarDropDownList"/>
+            </remarks>
+            <example>
+            <code><![CDATA[
+            -- webform.aspx ----------------------------
+            <%@ Register TagPrefix="FTB" Assembly="FreeTextBox" Namespace="FreeTextBoxControls" %>
+            <html>
+             <head>
+             </head>
+             <body>
+            	<form runat="server">
+            		<FTB:FreeTextBox id="FreeTextBox1" runat="server" />
+            	</form>
+             </body>
+            </html>
+            
+            -- web.config -------------------------------
+            <?xml version="1.0" encoding="utf-8" ?>
+            <configuration>
+            	<system.web>
+            		<httpHandlers>
+            			<add verb="GET" 
+            				path="FtbWebResource.axd" 
+            				type="FreeTextBoxControls.AssemblyResourceHandler, FreeTextBox" />		
+            		</httpHandlers>
+            	</system.web>      
+            </configuration>
+            ]]></code>
+            </example>
+        </member>
+        <member name="M:FreeTextBoxControls.FreeTextBox.LoadViewState(System.Object)">
+            <summary>
+            Gets or sets whether toolbar items are generated from a string
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.FreeTextBox.OnSaveClick(System.EventArgs)">
+            <summary>
+            Event for Save button
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.FreeTextBox.OnTextChanged(System.EventArgs)">
+            <summary>
+            Event for Save button
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.FreeTextBox.OnProcessText(System.EventArgs)">
+            <summary>
+            Event for ProcessText handler
+            </summary>
+        </member>
+        <member name="M:FreeTextBoxControls.FreeTextBox.IsRichCapable(System.Web.HttpContext)">
+            <summary>
+            Static function to determine if the client's browser is capable of displaying the rich editor.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Text">
+            <summary>
+            Gets or sets the HTML for the editor.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Xhtml">
+            <summary>
+            Converts the returned HTML to XHTML
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ViewStateText">
+            <summary>
+            Gets the Text data from the ViewState before it is processed
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.HtmlStrippedText">
+            <summary>
+            Gets the Text stripped of Html tags
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ClientID">
+            <summary>
+            Overridden ClientID field to ensure CSS and JS compatibility
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonStyle">
+            <summary>
+            Style parameters for ToolbarButtons when in "normal" state. 
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonStyleActive">
+            <summary>
+            Style parameters for ToolbarButtons when in "active" state.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Toolbars">
+            <summary>
+            Contains all the Toolbars and ToolbarItems
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ClientSideTextChanged">
+            <summary>
+            Gets or sets a javascript method fired when the text changes
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.JavaScriptLocation">
+            <summary>
+            Gets or sets where JS files are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonImagesLocation">
+            <summary>
+            Gets or sets where button images are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ToolbarImagesLocation">
+            <summary>
+            Gets or sets where the images such as the toolbar background and separators are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonSet">
+            <summary>
+            Gets or sets which button set to draw from if using resources
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.InstallationErrorMessage">
+            <summary>
+            Gets or sets how the user is alerted that FreeTextBox has not been installed correctly
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.BaseUrl">
+            <summary>
+            Gets or sets the base URL of the editor
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DesignModeCss">
+            <summary>
+            Gets or sets the URL of the style sheet used in Design mode.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DesignModeBodyTagCssClass">
+            <summary>
+            Gets or sets a CSS class used for the editor area
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Width">
+            <summary>
+            Gets or sets the width of the editor.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Height">
+            <summary>
+            Gets or sets the height of the editor including toolbars.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.BackColor">
+            <summary>
+            Gets or sets the back color of the entire editor area.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonFolder">
+            <summary>
+            Gets or sets whether buttons change images onMouseOver.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonWidth">
+            <summary>
+            Gets or sets the width in pixels of <see cref="T:FreeTextBoxControls.ToolbarButton"/>s
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonHeight">
+            <summary>
+            Gets or sets the height in pixels of <see cref="T:FreeTextBoxControls.ToolbarButton"/>s
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ToolbarStyleConfiguration">
+            <summary>
+            Gets or sets a prebuilt Toolbar styling to emulate versions of Microsoft Office.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DropDownListCssClass">
+            <summary>
+            Gets or sets the CSS class for DropDownLists
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.HtmlModeCssClass">
+            <summary>
+            Gets or sets the CSS class for HTML Mode
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.UpdateToolbar">
+            <summary>
+            Gets or sets whether the <see cref="T:FreeTextBoxControls.ToolbarButton"/>s and <see cref="T:FreeTextBoxControls.ToolbarDropDownList"/>s reflect the style of the text at the cursor.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ToolbarBackgroundImage">
+            <summary>
+            Gets or sets whether a background image is used for the toolbar.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ToolbarBackColor">
+            <summary>
+            Gets or sets the back color of each toolbar.
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.EnableToolbars">
+            <summary>
+            Gets or sets whether this control display <see cref="T:FreeTextBoxControls.Toolbar"/>s.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.UseToolbarBackGroundImage">
+            <summary>
+            Gets or sets whether an image is behind a toolbar
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.AutoGenerateToolbarsFromString">
+            <summary>
+            Gets or sets whether the toolbars are hidden when the editor is in HTML mode.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ToolbarLayout">
+            <summary>
+            A string of buttons used to create the toolbar. Use commas (,) to separate items.  A pipe (|) will insert a separator and a semicolon (;) will start a new Toolbar.  Possible values are ParagraphMenu, FontFacesMenu, FontSizesMenu, FontForeColorsMenu, FontForeColorPicker, FontBackColorsMenu, FontBackColorPicker, Bold, Italic, Underline, Strikethrough, Superscript, Subscript, CreateLink, Unlink, RemoveFormat, JustifyLeft, JustifyRight, JustifyCenter, JustifyFull, BulletedList, NumberedList, Indent, Outdent, Cut, Copy, Paste, Delete, Undo, Redo, Print, Save, SymbolsMenu, StylesMenu, InsertHtmlMenu, InsertRule, InsertDate, InsertTime, ieSpellCheck, NetSpell, WordClean, InsertImageFromGallery, InsertTable, InsertTableRowBelow, InsertTableRowAbove, DeleteTableRow, InsertTableColumnBelow, InsertTableColumnAbove, DeleteTableColumn, InsertForm, InsertForm,InsertTextBox,InsertTextArea,InsertRadioButton,InsertCheckBox,InsertDropDownList,InsertButton, InsertDiv, InsertImageFromGallery
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ToolbarsCreated">
+            <summary>
+            Private variable to see it ToolbarItems have been created from their string representation
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.StylesMenuList">
+            <summary>
+            The list of styles in the <see cref="T:FreeTextBoxControls.StylesMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.StylesMenuNames">
+            <summary>
+            The list of display names for the styles in <see cref="P:FreeTextBoxControls.FreeTextBox.StylesMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontFacesMenuList">
+            <summary>
+            The list of fonts in the <see cref="T:FreeTextBoxControls.FontFacesMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontFacesMenuNames">
+            <summary>
+            The list of display names for the fonts in <see cref="P:FreeTextBoxControls.FreeTextBox.FontFacesMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontSizesMenuList">
+            <summary>
+            The list of font sizes (1,2,3) in the <see cref="T:FreeTextBoxControls.FontSizesMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontSizesMenuNames">
+            <summary>
+            The list of display names for the font sizes in <see cref="P:FreeTextBoxControls.FreeTextBox.FontSizesMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontForeColorMenuList">
+            <summary>
+            The list of font colors in the <see cref="T:FreeTextBoxControls.FontForeColorsMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontForeColorMenuNames">
+            <summary>
+            The list of display names for the colors in <see cref="P:FreeTextBoxControls.FreeTextBox.FontForeColorMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontBackColorMenuList">
+            <summary>
+            The list of back colors in the <see cref="T:FreeTextBoxControls.FontBackColorsMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FontBackColorMenuNames">
+            <summary>
+            The list of display names for the back colors in <see cref="P:FreeTextBoxControls.FreeTextBox.FontBackColorMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.InsertHtmlMenuList">
+            <summary>
+            The list of HTML blocks inserted by <see cref="T:FreeTextBoxControls.InsertHtmlMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.InsertHtmlMenuNames">
+            <summary>
+            The list of display names for the HTML blocks in <see cref="P:FreeTextBoxControls.FreeTextBox.InsertHtmlMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ParagraphMenuList">
+            <summary>
+            The list of HTML blocks inserted by <see cref="T:FreeTextBoxControls.ParagraphMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ParagraphMenuNames">
+            <summary>
+            The list of display names for the HTML blocks used in <see cref="P:FreeTextBoxControls.FreeTextBox.ParagraphMenuList"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.SymbolsMenuList">
+            <summary>
+            The list of HTML symbols inserted by <see cref="T:FreeTextBoxControls.SymbolsMenu"/>
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.AssemblyResourceHandlerPath">
+            <summary>
+            Gets or sets the path to FtbWebResource.axd (if the web.config reference needs to happen elsewhere)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ShowTagPath">
+            <summary>
+            Gets or sets whether to show the path of tags at the cursor position
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Focus">
+            <summary>
+            Gets or sets whether this control will receive focus on startup
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ImageGalleryPath">
+            <summary>
+            The Url of the image gallery to be launched
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ImageGalleryUrl">
+            <summary>
+            The Url of the gallery used when the <see cref="T:FreeTextBoxControls.InsertImageFromGallery"/> button is pressed
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.AutoParseStyles">
+            <summary>
+            Gets or sets whether styles will automagically be parsed from DesignModeCss into StylesMenu items
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.SslUrl">
+            <summary>
+            Gets or sets the src url for the IFRAME when in SSL mode
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.TextDirection">
+            <summary>
+            Gets or sets the direction of text within the editor
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.StripAllScripting">
+            <summary>
+            Gets or sets whether FreeTextBox will attempt strip all scripting tags and scripting events.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.FormatHtmlTagsToXhtml">
+            <summary>
+            Gets or sets whether FreeTextBox will use <see cref="T:FreeTextBoxControls.Support.Sgml.SgmlReader"/> to reformat tags as XHTML
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DisableIEBackButton">
+            <summary>
+            Gets or sets whether to disable onload code that allow the back button to function in Internet Explorer. This does not affect Mozilla.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.EnableSsl">
+            <summary>
+            Gets or sets whether to add /. to the src attribute of the iframe in order for IE to correctly function in SSL.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.RemoveServerNameFromUrls">
+            <summary>
+            Gets or sets whether or not to strip out the local server name from all A and IMG tags
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.RemoveScriptNameFromBookmarks">
+            <summary>
+            Gets or sets whether or not to remove the scriptname from bookmarks
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ConvertHtmlSymbolsToHtmlCodes">
+            <summary>
+            Gets or sets whether or not to convert non-ASCII characters to HTML Hex codes.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.PasteMode">
+            <summary>
+            Gets or sets what happens when a user tries to paste into the editor
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.BreakMode">
+            <summary>
+            Gets or sets what happens when 'Enter' is pressed (IE only)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.TabMode">
+            <summary>
+            Gets or sets the TabMode of the control
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.EnableHtmlMode">
+            <summary>
+            Gets or sets whether to allow HTML mode
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.RenderMode">
+            <summary>
+            Gets or sets how the control will render.  NotSet = FreeTextBox will attempt to figure out which browser to render for, Text or Rich forces FreeTextBox to render accordingly
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.Language">
+            <summary>
+            Gets or sets the lanuage used for all labels. Pulls from XML languages files in /aspnet_client/FreeTextBox/Languages folder.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.SupportFolder">
+            <summary>
+            Gets or sets the folder where FreeTextBox images and scripts are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ScriptMode">
+            <summary>
+            Gets or sets if ToolbarItem JavaScript is written inpage or comes from an external file
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.TabIndex">
+            <summary>
+            Gets or sets the TabIndex on the IFrame
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ReadOnly">
+            <summary>
+            Gets or sets whether content is editable.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.StartMode">
+            <summary>
+            Gets or sets the mode FreeTextBox starts in.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonFileExtention">
+            <summary>
+            Gets or sets file type extention of buttons (gif,jpg,png)
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.HtmlModeDefaultsToMonoSpaceFont">
+            <summary>
+            Gets or sets the URL of the style sheet used in HTML mode.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.GutterBackColor">
+            <summary>
+            Gets or sets the back color of the gutter of the tab area.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.EditorBorderColorLight">
+            <summary>
+            Gets or sets the light color of the border of the Editor window.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.EditorBorderColorDark">
+            <summary>
+            Gets or sets the dark color of the border of the Editor window.
+            </summary>		
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.GutterBorderColorLight">
+            <summary>
+            Gets or sets the light color of the border of the Editor window.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.GutterBorderColorDark">
+            <summary>
+            Gets or sets the dark color of the border of the Editor window.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DownLevelCols">
+            <summary>
+            Gets or sets the cols property of the downlevel TEXTAREA
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DownLevelRows">
+            <summary>
+            Gets or sets the rows property of the downlevel TEXTAREA
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DownLevelMode">
+            <summary>
+            Gets or sets how FreeTextBox will render for downlevel browsers
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.DownLevelMessage">
+            <summary>
+            Gets or sets how FreeTextBox will render for downlevel browsers
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.HtmlModeCss">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonOverImage">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>	
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonDownImage">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>				
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.AllowHtmlMode">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.AutoConfigure">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.HelperFilesParameters">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.HelperFilesPath">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.ButtonPath">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.FreeTextBox.AutoHideToolbar">
+            <summary>
+            Depreciated: (FTB 1.x property)
+            </summary>
+        </member>
+        <member name="E:FreeTextBoxControls.FreeTextBox.SaveClick">
+            <summary>
+            Occurs when a Save button is pressed.
+            </summary>
+        </member>
+        <member name="E:FreeTextBoxControls.FreeTextBox.ProcessText">
+            <summary>
+            The event fired on post back that processes the HTML
+            </summary>
+        </member>
+        <member name="E:FreeTextBoxControls.FreeTextBox.TextChanged">
+            <summary>
+            The event fired on post back when the HTML in the editor has changed
+            </summary>
+        </member>
+        <member name="T:FreeTextBoxControls.ImageGallery">
+            <summary>
+            An Image Gallery and Upload Utility for <see cref="T:FreeTextBoxControls.FreeTextBox"/>
+            </summary>
+            <example>
+            <code><![CDATA[
+            -- ftb.imagegallery.aspx ----------------------------
+            <%@ Register TagPrefix="FTB" Assembly="FreeTextBox" Namespace="FreeTextBoxControls" %>
+            <html>
+             <head>
+             <style type="text/css">
+             body,form { margin: 0; }
+             </style>
+             </head>
+             <body>
+            	<form runat="server">
+            		<FTB:ImageGallery id="FreeTextBox1" runat="server" />
+            	</form>
+             </body>
+            </html>
+            </configuration>
+            ]]></code>
+            </example>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.CurrentDirectories">
+            <summary>
+            Sets the current directories used (overrides the default read)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.CurrentImages">
+            <summary>
+            Sets the current images used (overrides the default read)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.AssemblyResourceHandlerPath">
+            <summary>
+            Gets or sets the path to FtbWebResource.axd (if the web.config reference needs to happen elsewhere)
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.TargetFreeTextBox">
+            <summary>
+            Gets or sets the FreeTextBox to insert images into
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.RootImagesFolder">
+            <summary>
+            Gets or sets the root folder where images are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.CurrentImagesFolder">
+            <summary>
+            Gets or sets the current folder the user is browsing
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.AcceptedFileTypes">
+            <summary>
+            Gets or sets the imge file extensions allowed
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.ThumbnailHeight">
+            <summary>
+            Gets or sets the maximum height of thumbnails
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.ThumbnailWidth">
+            <summary>
+            Gets or sets the maximum height of thumbnails
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.AllowImageUpload">
+            <summary>
+            Gets or sets if uploading files is allowed
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.AllowImageDelete">
+            <summary>
+            Gets or sets if file deleting is allowed.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.AllowDirectoryDelete">
+            <summary>
+            Gets or sets if directory deleting is allowed.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.AllowDirectoryCreate">
+            <summary>
+            Gets or sets if directory creation is allowed.
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.JavaScriptLocation">
+            <summary>
+            Gets or sets where JS files are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.UtilityImagesLocation">
+            <summary>
+            Gets or sets where button images are stored
+            </summary>
+        </member>
+        <member name="P:FreeTextBoxControls.ImageGallery.SupportFolder">
+            <summary>
+            Gets or sets the FreeTextBox to insert images into
+            </summary>
+        </member>
+    </members>
+</doc>

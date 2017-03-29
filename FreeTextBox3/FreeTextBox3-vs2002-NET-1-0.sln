@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeTextBox3-vs2002-NET-1-0", "FreeTextBox3-vs2002-NET-1-0.csproj", "{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Debug.ActiveCfg = Debug|.NET
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Debug.Build.0 = Debug|.NET
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Release.ActiveCfg = Release|.NET
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseGenerator", "LicenseGenerator.csproj", "{ED18D9BB-8F72-4241-8462-2921F9EED237}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ED18D9BB-8F72-4241-8462-2921F9EED237}.Debug.ActiveCfg = Debug|.NET
+		{ED18D9BB-8F72-4241-8462-2921F9EED237}.Debug.Build.0 = Debug|.NET
+		{ED18D9BB-8F72-4241-8462-2921F9EED237}.Release.ActiveCfg = Release|.NET
+		{ED18D9BB-8F72-4241-8462-2921F9EED237}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

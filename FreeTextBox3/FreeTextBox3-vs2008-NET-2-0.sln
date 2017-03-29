@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeTextBox3-vs2008-NET-2-0", "FreeTextBox3-vs2008-NET-2-0.csproj", "{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		RELEASE_PRO|Any CPU = RELEASE_PRO|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.RELEASE_PRO|Any CPU.ActiveCfg = RELEASE_PRO|Any CPU
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.RELEASE_PRO|Any CPU.Build.0 = RELEASE_PRO|Any CPU
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

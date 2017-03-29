@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6C3C94F-8122-4BF3-87A6-4FCCB3525101}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>FreeTextBox</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FreeTextBoxControls</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/FreeTextBox/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\build\control\Framework-4-0\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>D:\work\code\freetextbox\FreeTextBox3\build\control\Framework-4-0\FreeTextBox.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\build\control\Framework-4-0\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>CS1591</NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'RELEASE_PRO|AnyCPU' ">
+    <OutputPath>web\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>web\bin\FreeTextBox.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>CS1591</NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.RegularExpressions">
+      <Name>System.Web.RegularExpressions</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BaseClasses and Collections\ToolbarCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses and Collections\ToolbarDropDownListItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses and Collections\ToolbarItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseClasses and Collections\ToolbarItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo-NET-4-0.cs" />
+    <Compile Include="Default ToolbarItems\Buttons\Bold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\BulletedList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Copy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\CreateLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Cut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Delete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertCheckBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertDropDownList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertForm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertRadioButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertTextArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\forms\InsertTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\IeSpellCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Indent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\InsertDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\InsertImage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\InsertImageFromGallery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\InsertRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\InsertTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Italic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\JustifiyRight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\JustifyCenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\JustifyFull.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\JustifyLeft.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\NetSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\NumberedList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Outdent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Paste.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Preview.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Print.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Pro\EditStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Pro\FontBackColorPicker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Pro\FontForeColorPicker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Pro\InsertDiv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Pro\WordClean.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Redo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\RemoveFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Save.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\SelectAll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\StrikeThrough.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\SubScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\SuperScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\DeleteTableColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\DeleteTableRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\EditTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\InsertTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\InsertTableColumnAfter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\InsertTableColumnBefore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\InsertTableRowAfter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\tables\InsertTableRowBefore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Underline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Undo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\Buttons\Unlink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\FontBackColorMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\FontFacesMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\FontForeColorMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\FontSizesMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\InsertHtmlMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\ParagraphMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\StylesMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Default ToolbarItems\DropDownLists\SymbolsMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Design\FreeTextBoxDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\BreakMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ButtonRenderMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\DownlevelMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\EditorMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\InstallationErrorMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\PasteMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\RenderMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ResourceLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ResourceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ScriptMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\TabMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\TextDirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\ToolbarStyleConfguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FreeTextBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageGallery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Licensing\FtbLicense.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Licensing\FtbLicenseProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Namespace Summaries\FreeTextBoxControls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\AssemblyResourceHandler-2005.cs" />
+    <Compile Include="Styles\ToolbarButtonStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\BrowserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\ClientScriptProxy.cs" />
+    <Compile Include="Support\ClientScriptWrapper-2005.cs" />
+    <Compile Include="Support\Formatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\Helper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\MsAjaxProxy.cs" />
+    <Compile Include="Support\ResourceManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\ScriptUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\SgmlReader\SgmlParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\SgmlReader\SgmlReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\StyleSheetParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\ToolbarGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolbarControls\Toolbar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolbarControls\ToolbarButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolbarControls\ToolbarDropDownList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolbarControls\ToolbarListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolbarControls\ToolbarSeparator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Resources\Languages\sk-SK.xml" />
+    <EmbeddedResource Include="FreeTextBox.bmp" />
+    <EmbeddedResource Include="Resources\Images\Office2000\bold.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\bulletedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\copy.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\createlink.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\cut.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\delete.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\deletetablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\deletetablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\editstyle.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\edittable.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\fontbackcolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\fontforecolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\iespellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\indent.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertbutton.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertcheckbox.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertdate.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertdiv.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertdropdownlist.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertform.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertimage.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertimagefromgallery.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertlistbox.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertradiobutton.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\insertrule.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttable.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttablecolumnafter.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttablecolumnbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttablerowafter.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttablerowbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttextarea.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttextbox.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\inserttime.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\italic.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\justifycenter.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\justifyfull.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\justifyleft.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\justifyright.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\mergecells.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\mergerows.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\mode.design.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\mode.html.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\netspell.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\normal.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\normal.png" />
+    <EmbeddedResource Include="Resources\Images\Office2000\numberedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\outdent.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\paste.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\preview.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\print.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\redo.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\removeformat.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\save.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\selectall.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\separator.horizontal.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\spacer.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\spellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\strikethrough.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\subscript.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\superscript.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\toolbar.horizontal.end.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\toolbar.horizontal.start.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\underline.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\undo.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\unlink.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\wordclean.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2000\wordcount.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\bold.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\bulletedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\buttons.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\copy.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\createlink.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\csharp.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\cut.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\delete.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\deletetablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\deletetablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\editstyle.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\edittable.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\edittablecell.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\edittablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\fontbackcolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\fontforecolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\iespellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\indent.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertbutton.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertcheckbox.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertdate.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertdiv.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertdropdownlist.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertform.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertimage.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertimagefromgallery.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertlistbox.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertradiobutton.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\insertrule.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttable.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttablecolumnafter.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttablecolumnbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttablerowafter.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttablerowbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttextarea.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttextbox.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\inserttime.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\italic.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\justifycenter.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\justifyfull.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\justifyleft.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\justifyright.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\mergecells.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\mergecolumns.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\mode.design.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\mode.html.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\netspell.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\numberedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\outdent.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\paste.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\preview.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\print.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\redo.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\removeformat.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\save.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\selectall.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\separator.horizontal.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\separator.vertical.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\spellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\splitcells.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\strikethrough.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\subscript.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\superscript.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbar.horizontal.background.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbar.horizontal.end.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbar.horizontal.start.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbar.vertical.background.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbar.vertical.end.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbar.vertical.start.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbarbuttoncss.off.out.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbarbuttoncss.off.over.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbarbuttoncss.on.out.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\toolbarbuttoncss.on.over.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\underline.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\undo.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\unlink.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\wordclean.gif" />
+    <EmbeddedResource Include="Resources\Images\Office2003\wordcount.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\backcolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\bold.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\bulletedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\copy.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\createlink.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\cut.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\delete.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\deletetablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\deletetablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\editstyle.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\edittable.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\fontbackcolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\fontforecolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\forecolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\iespellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\indent.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertbutton.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertcheckbox.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertdate.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertdiv.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertdropdownlist.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertform.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertimage.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertimagefromgallery.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertradiobutton.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\insertrule.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttable.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttablecolumnafter.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttablecolumnbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttablerowafter.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttablerowbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttextarea.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttextbox.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\inserttime.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\italic.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\justifycenter.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\justifyfull.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\justifyleft.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\justifyright.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\mode.design.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\mode.html.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\netspell.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\new.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\numberedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\outdent.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\paste.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\paste2.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\preview.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\print.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\redo.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\removeformat.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\save.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\selectall.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\separator.horizontal.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\strikethrough.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\subscript.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\superscript.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbar.horizontal.background.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbar.horizontal.end.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbar.horizontal.start.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbarbuttoncss.off.normal.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbarbuttoncss.off.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbarbuttoncss.on.normal.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\toolbarbuttoncss.on.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\underline.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\undo.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\unlink.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeMac\wordclean.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\bold.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\bold.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\bulletedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\bulletedlist.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\copy.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\copy.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\createlink.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\createlink.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\cut.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\cut.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\delete.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\delete.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\deletetablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\deletetablecolumn.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\deletetablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\deletetablerow.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\editstyle.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\edittable.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\fontbackcolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\fontbackcolorpicker.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\fontforecolorpicker.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\fontforecolorpicker.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\forumColumnBackground.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\iespellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\iespellcheck.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\indent.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\indent.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertbutton.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertcheckbox.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertdate.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertdate.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertdiv.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertdropdownlist.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertform.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertimage.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertimage.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertimagefromgallery.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertimagefromgallery.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertlistbox.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertradiobutton.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertrule.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\insertrule.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttable.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttable.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablecolumn.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablecolumn.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablecolumnafter.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablecolumnafter.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablecolumnbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablecolumnbefore.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablerow.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablerow.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablerowafter.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablerowafter.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablerowbefore.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttablerowbefore.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttextarea.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttextbox.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttime.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\inserttime.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\italic.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\italic.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifycenter.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifycenter.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifyfull.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifyfull.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifyleft.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifyleft.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifyright.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\justifyright.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\mergecells.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\mergecells.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\mergerows.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\mergerows.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\mode.design.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\mode.html.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\netspell.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\netspell.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\normal.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\normal.png" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\numberedlist.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\numberedlist.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\outdent.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\outdent.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\paste.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\paste.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\preview.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\print.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\print.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\redo.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\redo.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\removeformat.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\removeformat.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\save.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\save.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\selectall.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\separator.horizontal.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\spacer.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\spellcheck.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\spellcheck.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\strikethrough.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\strikethrough.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\subscript.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\subscript.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\superscript.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\superscript.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\toolbar.horizontal.end.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\toolbar.horizontal.start.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\underline.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\underline.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\undo.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\undo.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\unlink.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\unlink.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\wordclean.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\wordclean.over.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\wordcount.gif" />
+    <EmbeddedResource Include="Resources\Images\OfficeXP\wordcount.over.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\folder.big.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\folder.small.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\folder.up.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\image.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\locked.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\restore.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\spacer.gif" />
+    <EmbeddedResource Include="Resources\Images\Utility\unlocked.gif" />
+    <EmbeddedResource Include="Resources\JavaScript\FTB-FreeTextBox.js" />
+    <EmbeddedResource Include="Resources\JavaScript\FTB-ImageGallery.js" />
+    <EmbeddedResource Include="Resources\JavaScript\FTB-Pro.js" />
+    <EmbeddedResource Include="Resources\JavaScript\FTB-ToolbarItems.js" />
+    <EmbeddedResource Include="Resources\JavaScript\FTB-Utility.js" />
+    <EmbeddedResource Include="Resources\Languages\ca-ES.xml" />
+    <EmbeddedResource Include="Resources\Languages\cs-CZ.xml" />
+    <EmbeddedResource Include="Resources\Languages\de-DE.xml" />
+    <EmbeddedResource Include="Resources\Languages\en-US.xml" />
+    <EmbeddedResource Include="Resources\Languages\es-ES.xml" />
+    <EmbeddedResource Include="Resources\Languages\fr-FR.xml" />
+    <EmbeddedResource Include="Resources\Languages\he-IL.xml" />
+    <EmbeddedResource Include="Resources\Languages\hu-HU.xml" />
+    <EmbeddedResource Include="Resources\Languages\it-IT.xml" />
+    <EmbeddedResource Include="Resources\Languages\ja-JP.xml" />
+    <EmbeddedResource Include="Resources\Languages\ko-KR.xml" />
+    <EmbeddedResource Include="Resources\Languages\Languages.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Languages\nb-NO.xml" />
+    <EmbeddedResource Include="Resources\Languages\nl-NL.xml" />
+    <EmbeddedResource Include="Resources\Languages\pl-PL.xml" />
+    <EmbeddedResource Include="Resources\Languages\pt-PT.xml" />
+    <EmbeddedResource Include="Resources\Languages\ro-RO.xml" />
+    <EmbeddedResource Include="Resources\Languages\ru-RU.xml" />
+    <EmbeddedResource Include="Resources\Languages\sv-SE.xml" />
+    <EmbeddedResource Include="Resources\Languages\zh-CN.xml" />
+    <EmbeddedResource Include="Resources\Languages\zh-TW.xml" />
+    <EmbeddedResource Include="Support\SgmlReader\Resources\Html.dtd" />
+    <EmbeddedResource Include="Support\SgmlReader\Resources\htmllat1.ent" />
+    <Content Include="Resources\Images\Office2003\mergerows.gif" />
+    <EmbeddedResource Include="Resources\Languages\ar-SA.xml" />
+    <EmbeddedResource Include="Resources\Languages\da-DK.xml" />
+    <EmbeddedResource Include="Resources\Languages\fa-IR.xml" />
+    <EmbeddedResource Include="Resources\Languages\el-GR.xml" />
+    <None Include="Support\SgmlReader\Resources\frameset.dtd" />
+    <None Include="Support\SgmlReader\Resources\HTMLspecial.ent" />
+    <None Include="Support\SgmlReader\Resources\HTMLsymbol.ent" />
+    <None Include="Support\SgmlReader\Resources\loose.dtd" />
+    <None Include="Support\SgmlReader\Resources\Sloppy.dtd" />
+    <None Include="Support\SgmlReader\Resources\strict.dtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

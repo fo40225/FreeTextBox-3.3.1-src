@@ -3,7 +3,6 @@
 
 >FreeTextBox is no longer being actively developed and both the control and source are free to download. http://www.freetextbox.com/
 
-Because the FreeTextBox official webside index page's download link is dead, the files here is the source code using ILSpy decompile the .NET Framework 4.0's FreeTextBox.dll
-
+Files in this repo is downloaded from http://www.freetextbox.com/download/storage/FTBv3-3-1-source.zip
 
 I don't have the copyright. Just for study.
